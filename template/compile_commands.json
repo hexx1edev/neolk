@@ -1,0 +1,1 @@
+[{"directory":".","command":"zig cc -target aarch64-freestanding -ffreestanding -Iframework -c my_payload/main.c","file":"my_payload/main.c"}]

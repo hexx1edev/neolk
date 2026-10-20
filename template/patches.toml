@@ -1,0 +1,4 @@
+[my_patch]
+pattern = "0B 00 ?? AF"
+replacement = "0B 0B B8 AD"
+target = bl2_ext

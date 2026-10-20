@@ -1,0 +1,11 @@
+# Zig build products and downloaded dependencies
+.zig-cache/
+zig-out/
+zig-pkg/
+
+# Device-workspace build products and supplied firmware images
+build/
+*.img
+*.bin
+*.elf
+*.o

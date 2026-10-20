@@ -1,0 +1,12 @@
+.{
+    .name = .neolk,
+    .version = "0.16.0",
+    .dependencies = .{
+        .toml = .{
+            .url = "git+https://github.com/sam701/zig-toml?ref=zig-0.16#8685923e32e8b8a795eb2715684236975a70faed",
+            .hash = "toml-0.3.0-bV14BRmKAQAWR0FT0KUKFwVJTImaFhWjSe6HfSMtNZOH",
+        },
+    },
+    .paths = .{""},
+    .fingerprint = 0xbc7b296601661676,
+}

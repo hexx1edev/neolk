@@ -1,0 +1,16 @@
+[device]
+name = "emerald"
+bypass = "override"
+
+[system.bl2_ext]
+virtual_base = "0xFFFF000000000000"
+load_addr = 1659895808
+printf = 16725830
+malloc = 16524104
+
+[loader.bl2_ext]
+inject_point = 748
+storage_offset = 880
+
+[image]
+path = binaries/lk.img
