@@ -1,0 +1,39 @@
+[sec_get_vfy_policy]
+pattern = "00 01 00 B4 FD 7B BF A9"
+replacement = "00 00 80 52 C0 03 5F D6"
+target = "lk"
+
+[sec_get_vfy_policy_inlined]
+pattern = "88 00 80 52 A0 73 00 91 A8 1F 00 B9 9B 54 FF 97"
+replacement = "68 00 80 52 A0 73 00 91 A8 1F 00 B9 00 00 80 52"
+target = "lk"
+
+[sec_get_vfy_policy_inlined2]
+pattern = "88 00 80 52 A0 73 00 91 A8 1F 00 B9 9D 53 FF 97"
+replacement = "68 00 80 52 A0 73 00 91 A8 1F 00 B9 00 00 80 52"
+target = "lk"
+
+[force_green_state]
+pattern = "68 03 00 B0 00 21 08 B9 C0 03 5F D6"
+replacement = "68 03 00 B0 1F 21 08 B9 C0 03 5F D6"
+target = "lk"
+
+[bypass_security_control]
+pattern = "E8 0B 40 B9 1F 0D 00 71 C0 00 00 54"
+replacement = "E8 0B 40 B9 1F 0D 00 71 06 00 00 14"
+target = "lk"
+
+[spoof_sboot_state]
+pattern = "FD 7B BE A9 F3 0B 00 F9 FD 03 00 91 F3 03 00 AA 20 00 80 52 C4"
+replacement = "48 04 80 52 08 00 00 B9 00 00 80 52 C0 03 5F D6 1F 20 03 D5 C4"
+target = "lk"
+
+[spoof_lock_state]
+pattern = "20 02 00 B4 FD 7B BE A9 F3 0B 00 F9 FD 03 00 91"
+replacement = "88 00 80 52 08 00 00 B9 00 00 80 52 C0 03 5F D6"
+target = "lk"
+
+[dont_relock_seccfg]
+pattern = "FD 7B BE A9 F3 0B 00 F9 FD 03 00 91 F3 03 00 2A 28 00 80 52"
+replacement = "00 00 80 52 C0 03 5F D6 1F 20 03 D5 1F 20 03 D5 1F 20 03 D5"
+target = "lk"

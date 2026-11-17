@@ -1,0 +1,10 @@
+[package]
+name = "neolk"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+indexmap = "2.14.2"
+serde = { version = "1.0.229", features = ["derive"] }
+sha2 = "0.11.1"
+toml = "1.2.1"

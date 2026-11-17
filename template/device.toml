@@ -1,0 +1,4 @@
+name = "emerald"
+binary = "binaries/lk.img"
+# either skip or override, skip - do not apply cert bypass
+cert = "override"
